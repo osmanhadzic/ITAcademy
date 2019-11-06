@@ -6,7 +6,7 @@ public class Trougao {
 	
 	public static void main(String[] args) {
 		
-		double a, b, c, povrsina, obim;
+		double a, b, c, obim;
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -25,7 +25,7 @@ public class Trougao {
 		
 		obim = Obim(a,b,c); 
 		
-		povrsina = Povrsina(a,b,c);
+		Double povrsina = Povrsina(a,b,c);
 		
 		ispis(povrsina, obim);
 		
@@ -47,7 +47,7 @@ public class Trougao {
 		return obim;
 	}
 	
-	public static double Povrsina(double a, double b, double c) {
+	public static Double Povrsina(double a, double b, double c) {
 		double obim = a + b + c;
 		double s = obim / 2;
 		return s * (s-a) * (s-b) * (s-c);
