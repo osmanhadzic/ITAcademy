@@ -6,6 +6,8 @@ public class Main  {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		Converter cn = new Converter();
+		
 		double mile,km;
 		int pom;
 		
@@ -18,14 +20,14 @@ public class Main  {
 		case 1:
 			System.out.println("Please insert your speed in km/h: ");
 		    km = in.nextDouble();
-			mile = Converter.ToMilPerH(km);
+			mile = cn.ToMilPerH(km);
 			System.out.printf("Speed is %.2f mil/h", mile);
 
 			break;
 		case 2:
 			System.out.println("Please insert your speed in mil/h: ");
 		    mile = in.nextDouble();
-			km = Converter.ToKmPerH(mile);
+			km = cn.ToKmPerH(mile);
 			System.out.printf("Speed is %.2f km/h", km);
 			break;
 			
